@@ -1,0 +1,14 @@
+{
+  "name": "financial-platform",
+  "version": "1.0.0",
+  "description": "Financial platform for students",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1"
+  }
+}

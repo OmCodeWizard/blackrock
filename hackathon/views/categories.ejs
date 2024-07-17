@@ -1,0 +1,26 @@
+<%- include('layout') %>
+<section class="manage-categories">
+    <h1>Manage Categories</h1>
+    <form action="/expenses/categories/add" method="POST">
+        <div>
+            <label for="name">Category Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <button type="submit">Add Category</button>
+    </form>
+    <h2>Existing Categories</h2>
+    <ul>
+        <% categories.forEach(category => { %>
+            <li>
+                <%= category.name %>
+                <form action="/expenses/categories/edit/<%= category._id %>" method="POST" style="display:inline;">
+                    <input type="text" name="name" value="<%= category.name %>" required>
+                    <button type="submit">Edit</button>
+                </form>
+                <form action="/expenses/categories/delete/<%= category._id %>" method="POST" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+</section>

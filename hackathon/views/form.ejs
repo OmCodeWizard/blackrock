@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Idea</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Funding Routes</a></li>
+                <li><a href="#">Success Stories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Submit Your Project Idea</h2>
+            <form action="/submit-idea" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="title">Project Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Project Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="problem">Problem Statement:</label>
+                    <textarea id="problem" name="problem" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount Requested:</label>
+                    <input type="number" id="amount" name="amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Budget Breakdown:</label>
+                    <textarea id="budget" name="budget" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="market">Market Segment:</label>
+                    <input type="text" id="market" name="market" required>
+                </div>
+                <div class="form-group">
+                    <label for="usp">Unique Selling Proposition:</label>
+                    <textarea id="usp" name="usp" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Previous Experience:</label>
+                    <textarea id="experience" name="experience" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="timeline">Project Timeline:</label>
+                    <textarea id="timeline" name="timeline" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="documents">Supporting Documents:</label>
+                    <input type="file" id="documents" name="documents" multiple>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the <a href="#">terms and conditions</a>
+                    </label>
+                </div>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Funding Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<%- include('layout') %>
+<section class="budget-tracking">
+    <h1>Monthly Budget Tracking</h1>
+    <ul>
+        <% budgets.forEach(budget => { %>
+            <li>
+                <strong><%= budget.name %>:</strong>
+                <div class="progress-bar">
+                    <div class="progress" style="width: <%- Math.min((budget.total / 1000) * 100, 100) %>">
+ 
+                        $<%= budget.total %>
+                    </div>
+                </div>
+            </li>
+        <% }) %>
+    </ul>
+</section>
